@@ -20,7 +20,7 @@ export default function({ markers, selectedMarkerHandler, location, markerElemen
                             markers.map((marker, index) => { 
                                 return <Marker id={marker._id} 
                                                 key={marker._id} 
-                                                coordinate={{ latitude: parseFloat(beacon.latitude), longitude: parseFloat(beacon.longitude) }} 
+                                                coordinate={{ latitude: parseFloat(marker.latitude), longitude: parseFloat(marker.longitude) }} 
                                                 onPress={(e)=> selectedMarkerHandler(e.nativeEvent.coordinate)} 
                                                 radius={1500}
                                                 anchor={{x: 0.5, y: 1}}
