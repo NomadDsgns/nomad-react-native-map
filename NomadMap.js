@@ -6,7 +6,7 @@ export default function({ markers, selectedMarkerHandler, location, markerElemen
     const [ region, setRegion ] = useState({ latitude: location.coords.latitude,
                                                     longitude: location.coords.longitude,
                                                     latitudeDelta: region.latitudeDelta,
-                                                    longitudeDelta: region.longitudeDelta);
+                                                    longitudeDelta: region.longitudeDelta});
 
     return (
         <View style={styles.mapContainer}>
