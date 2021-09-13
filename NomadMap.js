@@ -2,7 +2,7 @@ import React from 'react';
 import { Dimensions, View, Image } from 'react-native';
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 
-export default function Map({ markers, selectedMarkerHandler, location }) {
+export default function({ markers, selectedMarkerHandler, location }) {
     const [ region, setRegion ] = React.useState({ latitude: location.coords.latitude,
                                                     longitude: location.coords.longitude,
                                                     latitudeDelta: region.latitudeDelta,
